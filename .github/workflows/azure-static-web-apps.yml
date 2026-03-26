@@ -51,8 +51,8 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          # This tells Azure to look inside the subfolder where pnpm actually built the files
-          app_location: "artifacts/survey-app/dist" 
+          # Adding /public at the end because dist is empty but dist/public contains the app
+          app_location: "artifacts/survey-app/dist/public" 
           skip_app_build: true
           api_location: ""
 
