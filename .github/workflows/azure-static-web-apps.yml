@@ -35,11 +35,14 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
+        # This tells pnpm to ONLY build the survey-app and ignore the broken mockup-sandbox
+        run: pnpm --filter @workspace/survey-app run build
         env:
           NODE_ENV: production
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          # We add a dummy PORT just in case other scripts check for it
+          PORT: 3000
 
       - name: Build And Deploy
         id: builddeploy
