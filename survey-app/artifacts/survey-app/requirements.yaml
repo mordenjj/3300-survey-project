@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For elegant page transitions and interactive element animations"
+  "recharts": "For rendering data visualization charts on the results page"
+  "@supabase/supabase-js": "Direct database connection for frontend"
+  "react-hook-form": "For complex form state management and validation"
+  "@hookform/resolvers": "For Zod schema validation integration"
+  "zod": "For strict schema definition and validation"
+
+images: []
+
+notes:
+  - "The app uses Supabase directly from the browser without a backend API."
+  - "Environment variables VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY must be provided."
+  - "Wouter is used for routing."

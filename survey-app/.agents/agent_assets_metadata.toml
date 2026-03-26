@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "0VIuCDQsTKBPkcF7QfHy_"
+uri = "file://README.md"
+type = "text"
+title = "BAIS:3300 Study Habits Survey — README.md"
+
+[[outputs]]
+id = "-vObkOLWCP70QWXYlzR51"
+uri = "file://WORKING_NOTES.md"
+type = "text"
+title = "WORKING_NOTES.md — BAIS:3300 Study Habits Survey"
